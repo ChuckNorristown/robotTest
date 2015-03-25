@@ -8,7 +8,8 @@ This server serves HTML pages under `html` directory. Server is started simply
 by running this script from the command line. In the former case the server can 
 be shut down with Ctrl-C.
 
-*in terminal run $python roboCop/server.py
+* in terminal run $python roboCop/server.py
+* executing tests run $pybot login_tests
 
 """
 
