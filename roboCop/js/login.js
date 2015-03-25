@@ -4,7 +4,7 @@ function theLogin() {
 var password = 'roboCop';
 
 if (this.document.login.password.value == password) {
-  top.location.href="index.html";
+  top.location.href="home.html";
 }
 if (this.document.login.password.value == "") {
    alert("Please enter your password.");
