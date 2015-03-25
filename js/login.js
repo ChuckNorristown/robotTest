@@ -1,5 +1,5 @@
 
-function TheLogin() {
+function theLogin() {
 
 var password = 'roboCop';
 
@@ -11,7 +11,7 @@ if (this.document.login.password.value == "") {
    this.document.password.focus();
    return false;
   }
-if (this.document.login.password.value != "pacia1986") {
+if (this.document.login.password.value != "roboCop") {
    alert("Invalid password.");
    this.document.password.focus();
    return false;
