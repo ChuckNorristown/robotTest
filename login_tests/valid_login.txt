@@ -8,7 +8,7 @@ Resource          resource.txt
 *** Test Cases ***
 Valid Login
     Open Browser To Login Page
-    Input Username    demo
+    Input Username    robo
     Input Password    mode
     Submit Credentials
     Welcome Page Should Be Open
