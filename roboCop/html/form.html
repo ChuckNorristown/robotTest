@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Page</title>
+  <link href="robo.css" media="all" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+    function login(firstname, lastname) {
+        if (firstname == "" && lastname == "") {
+            window.location = "no-name.html";
+        } else {
+            window.location = "welcome.html";
+        }
+    }
+  </script>
+</head>
+<body>
+  <div id="container">
+    <h1>Form Page</h1>
+      <p>Please input your first and last names and click the submit button.</p>
+        <form name="name_form" onsubmit="login(this.firstname_field.value, this.lastname_field.value); return false;">
+        <table>
+          <tr>
+            <td><label for="firstname_field">First Name:</label></td>
+            <td><input id="firstname_field" size="30" type="text"></td>
+          </tr>
+          <tr>
+            <td><label for="lastname_field">Last Name:</label></td>
+            <td><input id="lastname_field" size="30" type="text"></td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><input id="login_button" type="submit" value="SUBMIT"></td>
+          </tr>
+        </table>
+      </form>
+  </div>
+</body>
+</html>

@@ -8,13 +8,17 @@ Library           Selenium2Library
 
 *** Variables ***
 ${SERVER}         localhost:7272
-${BROWSER}        Firefox
+${BROWSER}        Chrome
 ${DELAY}          0
 ${VALID USER}     demo
 ${VALID PASSWORD}    mode
+${VALID FIRSTNAME}     Sean
+${VALID LASTNAME}    Shields
 ${LOGIN URL}      http://${SERVER}/
 ${WELCOME URL}    http://${SERVER}/welcome.html
+${FORM URL}    http://${SERVER}/form.html
 ${ERROR URL}      http://${SERVER}/error.html
+${NO-NAME URL}      http://${SERVER}/no-name.html
 
 *** Keywords ***
 Open Browser To Login Page
@@ -37,6 +41,21 @@ Input Username
 Input Password
     [Arguments]    ${password}
     Input Text    password_field    ${password}
+
+Submit Credentials
+    Click Button    login_button
+
+Form Page Should Be Open
+    Location Should Be    ${FORM URL}
+    Title Should Be    FORM Page
+
+Input Firstname
+    [Arguments]    ${firstname}
+    Input Text    firstname_field    ${firstname}
+
+Input Lastname
+    [Arguments]    ${lastname}
+    Input Text    lastname_field    ${lastname}
 
 Submit Credentials
     Click Button    login_button
