@@ -1,19 +1,9 @@
 #!/usr/bin/env python
 
-"""Simple HTTP server for Robot Framework web testing demo.
+"""
 
-Usage:  server.py [port]
-
-This server serves HTML pages under `html` directory. Server is started simply
-by running this script from the command line or double-clicking it in a file
-manager. In the former case the server can be shut down with Ctrl-C and in the
-latter case by closing the opened window.
-
-By default the server uses port 7272, but a custom port can be given as
-an argument from the command line.
-
-* in terminal run $python roboCop/server.py
-* executing tests run $pybot login_tests
+* in terminal run $python roboCop/server.py to start server
+* for executing tests run $pybot login_tests
 
 """
 
